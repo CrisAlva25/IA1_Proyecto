@@ -134,9 +134,9 @@ def lectura_dataset():
     train_y_orig = np.array(train_y).T
     test_x_orig = np.array(test_x).T
     test_y_orig = np.array(test_y).T
-    #print(train_x_orig[1])
+    print(np.array(train_x)[1])
 
-    return train_x_orig, train_y_orig, test_x_orig, test_y_orig
+    return train_x_orig, train_y_orig, test_x_orig, test_y_orig, distancias, [min_edad, max_edad, min_año, max_año, min_dist, max_dist]
 
 def escalar_var(xi, mini, maximo):
     return (float(xi) - mini) / (maximo - mini)
